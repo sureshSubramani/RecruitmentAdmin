@@ -633,8 +633,6 @@
                                                             </div>                                                        
                                                             <!-- Modal footer -->
                                                             <div class="modal-footer">
-                                                                <input type='hidden' name='id[]' class='id' value='<?php echo $value->personal_id; ?>' id='select_status'
-                                                                        class='form-control check-ctrl' required/>
                                                                         <a href="<?php echo base_url() ?>print_pdf/pdf_download?&personal_id=<?php echo $value->personal_id;?>"
                                                         class='btn btn-sm btn-danger' id='pdf_download' target='top'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <i class="fa fa-download" aria-hidden="true"></i></a>
                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -651,11 +649,7 @@
 						</div>
 					</div>
 					<div class="col-lg-12 card-footer ">
-						<?php  if($_SESSION['roll_type_id'] == '0' && $_SESSION['username'] == 'developer'){  ?>
-						<div class="form-inline col-lg-1 float-right">
-							<button type="submit" class="btn btn-sm btn-info" name="staff_status">Submit</button>
-						</div>
-						<?php } ?>
+						
 					</div>
 					</form>
 				</div>

@@ -71,11 +71,6 @@
     }
 //});
 
-// $(document).ready(function() {    
-// 	var 
-
-
-//});
 </script>
 </body>
 

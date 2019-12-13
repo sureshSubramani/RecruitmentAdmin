@@ -8,9 +8,11 @@ define('EXPERIENCE', 'experience_details');
 define('ACHIEVEMENT', 'achievement_details');
 define('JOINING', 'joining_details');
 define('DEPARTMENTS', 'departments');
+define('TEAMDATA','team_details');
 
 define('GOOGLE_KEY', '6LeYqMQUAAAAAN5ESVDHgxWRzZwT3UsbLlmWfVhc');
 define('GOOGLE_SECRET', '6LeYqMQUAAAAAN3UxwVt6NOImU6E1dnwIIdzShlI');
+
 // $config = array(
 //     // Captcha configuration for example page
 //     'ExampleCaptcha' => array(

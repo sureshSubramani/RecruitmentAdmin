@@ -186,7 +186,7 @@ class Recruitment_model extends CI_Model{
          }
     }
 
-    public function getStaff_List(){
+    public function getProfile_List(){
 
         //$this->db->where("status",1);
     
@@ -196,6 +196,17 @@ class Recruitment_model extends CI_Model{
         //$this->db->select('p.*, d.dept_name, e.*');
               
         $query = $this->db->get();
+
+        if($query->num_rows() > 0){
+          return $query->result();
+          }
+        return false;        
+    }
+
+    public function getStaff_List(){
+
+        $this->db->where("status",1);              
+        $query = $this->db->get(TEAMDATA);
 
         if($query->num_rows() > 0){
           return $query->result();

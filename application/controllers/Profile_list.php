@@ -10,7 +10,7 @@ class Profile_list extends CI_Controller {
 
 	public function index(){
 
-        $q1 = $this->rm->getStaff_List();
+        $q1 = $this->rm->getProfile_List();
         //$q2 = $this->rm->getPersonal();
         //$q3 = $this->rm->getEducation();
 
@@ -56,11 +56,18 @@ class Profile_list extends CI_Controller {
         
         if($status['profile_status'] == 0) $status = 1; else $status = 0;
        
-        $this->db->where('personal_id', $personal_id);
-        $q = $this->db->update(PERSONAL,array('profile_status' => $status));
+        if($status == 1){
+            $this->db->where('personal_id', $personal_id);
+            $this->db->update(PERSONAL,array('profile_status' => $status));
+
+            $data = array(
+                'personal_id' => $personal_id,
+                'status' => 1
+            );
+            
+            $this->db->insert(TEAMDATA,$data);
+        }
         //print_r(json_encode($status['profile_status'])); die();
-       
-       if($q){ redicrect('profile_list',refresh);}
         
     }
 }
