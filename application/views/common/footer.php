@@ -57,7 +57,7 @@
     <!-- Custom Theme Scripts -->
     <script src="assets/build/js/custom.min.js"></script>
 
-<script>
+<script type="text/javascript">
 //document.ready(function() {
     $(".alert").fadeOut(5000).first().fadeOut(5000);
     setTimeout(showNotifications, 4000);
@@ -69,6 +69,12 @@
             setTimeout(showNotifications, 4000);
         }
     }
+//});
+
+// $(document).ready(function() {    
+// 	var 
+
+
 //});
 </script>
 </body>

@@ -45,6 +45,22 @@ class Profile_list extends CI_Controller {
         } 
         $this->rm->select_staff($data);
     }
-	
+   
+    public function getShortlist(){
 
+        $personal_id = $this->input->get('personal_id');
+        $this->db->where('personal_id', $personal_id);
+        $this->db->select('profile_status');
+        $status = $this->db->get(PERSONAL)->row_array();
+
+        
+        if($status['profile_status'] == 0) $status = 1; else $status = 0;
+       
+        $this->db->where('personal_id', $personal_id);
+        $q = $this->db->update(PERSONAL,array('profile_status' => $status));
+        //print_r(json_encode($status['profile_status'])); die();
+       
+       if($q){ redicrect('profile_list',refresh);}
+        
+    }
 }

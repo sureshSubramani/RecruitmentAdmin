@@ -38,7 +38,7 @@ class Print_pdf extends CI_Controller {
             $html_profile = $this->load->view('print_pdf',$this->data, true); //load the pdf_output.php by passing our data and get all data in $html varriable.
         
             //this the the PDF filename that user will get to download
-            $pdfFilePath ="profile_".time()."-download.pdf";
+            $pdfFilePath ="profile_".time()."_mnw.pdf";
           
             //actually, you can pass mPDF parameter on this load() function
             $pdf = $this->m_pdf->load();

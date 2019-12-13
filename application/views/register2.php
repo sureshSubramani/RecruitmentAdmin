@@ -1,4 +1,4 @@
-<div class="modal fade" id="print<?php echo $value->personal_id;?>">
+                                                <div class="modal fade" id="print<?php echo $value->personal_id;?>">
                                                     <div class="modal-dialog modal-xl">
                                                         <div class="modal-content">                                                    
                                                             <!-- Modal Header -->
