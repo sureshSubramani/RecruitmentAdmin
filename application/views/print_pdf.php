@@ -450,8 +450,7 @@
 						<h4 class='signature'>Name & Signature of the Candidate</h4>
 					</div>
 				</div>
-				<?php } ?>
-
+				
 				<hr />
 				<div style='text-align:center;'>
 					<span style='text-align:center;'>For Office Use Only</span>
@@ -495,6 +494,21 @@
             </div>
             <div class="row">
                 <div class='divCard'>
+				<table class='table' style='margin-bottom:20px;'>
+                        <tr>
+							<td>Full Name</td><td>:</td><td><?php echo $value->first_name." ".$value->last_name;?></td>			
+                            
+						</tr>  
+						<tr>
+							
+							<td>Mobile/ E-mail</td><td>:</td><td><?php echo $value->email_id." / ".$value->phone_no;?></td>
+                            
+						</tr> 
+						<tr>
+							
+                            <td>Department</td><td>:</td><td><?php echo $value->dept_name; ?></td>
+                        </tr>               
+                    </table>
                     <table class='table scroeCard'>
                         <tr>
                             <td></td>
@@ -511,7 +525,7 @@
                     </table>
                 </div>
             </div>
-
+			<?php } ?>
         </div>
 
 </body>

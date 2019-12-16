@@ -205,8 +205,14 @@ class Recruitment_model extends CI_Model{
 
     public function getStaff_List(){
 
-        $this->db->where("status",1);              
-        $query = $this->db->get(TEAMDATA);
+        $this->db->where("profile_status",1);
+        $this->db->from(PERSONAL.' as p');
+        $this->db->join(TEAMDATA.' as t','p.personal_id = t.id','LEFT'); 
+        $this->db->join(EXPERIENCE.' as e', 'p.personal_id = e.personal_id','LEFT');  
+        $this->db->order_by('t.status asc');           
+        $query = $this->db->get();
+
+        //print_r($query->result());
 
         if($query->num_rows() > 0){
           return $query->result();

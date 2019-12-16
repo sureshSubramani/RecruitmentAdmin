@@ -8,18 +8,20 @@
     margin-left: 10%;
 }
 
-.modal-content {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-    height: 900px;
-    width:100%; 
-    overflow-y: auto;
+.modal-height{
+    height: 800px;
 }
 
 .modal-header .close {
     position: absolute;
     right: 20px;
-    transform: translate(0%, -80%);
+    /* transform: translate(0%, -80%); */
+}
+
+.no-due{
+    top: 3px;
+    position: relative;
+    left: 15px;
 }
 
 .val1::placeholder, .val2::placeholder, .val3::placeholder, .val4::placeholder, .val5::placeholder, .val6::placeholder, .val7::placeholder {

@@ -1434,9 +1434,9 @@
     float: left;
     background: #EDEDED;
     border-bottom: 1px solid #D9DEE4;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     width: 100%;
-    position: relative
+    position: fixed;
 }
 
 .info-number .badge {
@@ -1479,12 +1479,13 @@
 }
 
 body .container.body .right_col {
-    background: #F7F7F7
+    background: #F7F7F7;
 }
 
 .nav-md .container.body .right_col {
     padding: 10px 20px 0;
-    margin-left: 230px
+    margin-left: 230px;
+    overflow: hidden;
 }
 
 .nav_title {

@@ -9,6 +9,14 @@
     padding-left:50px;
     padding-right:50px;
 }
+.container-2{
+    margin:auto 0;
+    width:100%;
+    max-width: 960px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:60px;
+}
 .column_logo {
     float: left;
     width: 12%;

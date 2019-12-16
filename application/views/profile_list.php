@@ -137,16 +137,19 @@
                                                         class='btn btn-sm btn-danger' id='pdf_download' target='top'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <i class="fa fa-download" aria-hidden="true"></i></a>
                                                         <div class="modal fade" id="print<?php echo $value->personal_id;?>">
                                                     <div class="modal-dialog modal-xl">
-                                                        <div class="modal-content">                                                    
+                                                        <div class="modal-content modal-height">                                                    
                                                             <!-- Modal Header -->
-                                                            <div class="modal-header" style='border-bottom:0px;'>                                                                
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <div class="modal-header"> 
+                                                                <h4 class="modal-title text-center">Profile Details</h4>                                                        
+                                                                <button type="button" class="close" data.modal-content-dismiss="modal">&times;</button>
                                                             </div>                                                        
                                                             <!-- Modal body -->
                                                             <div class="modal-body" id='print_profile'>                                                               
-                                                                <div class='row' style="margin: 0px 80px;">
-                                                                <div class='logo'><img src='assets/build/images/logo.jpg' alt='logo' class='img-fluid' style='width:12%;'/></div>
-                                                                <div class='col-lg-12 text-center'>
+                                                                <div class='row' style="margin: 20px 80px;">
+                                                                <div class='col-lg-2'>
+                                                                 <div class='logo'><img src='assets/build/images/logo.jpg' alt='logo' class='img-fluid'/></div>
+                                                                </div>
+                                                                <div class='col-lg-10 text-center'>
                                                                 <h3 class="modal-title" style='margin-top:20px; font-weight:bold'>MAHENDRA ARTS & SCIENCE COLLEGE, KALIPPATTI</h3>
                                                                 <p class="modal-title">(NAAC Accredited with "A" Grade | Autonomous | Recognized under section 2(F) & 12(B) of the UGC Act 1986)</p>
                                                                 <h5 style='margin-top:5px; font-weight:bold'><u>TEACHING FACULTY INFORMATION SHEET</u></h5>
@@ -633,7 +636,7 @@
                                                             </div>                                                        
                                                             <!-- Modal footer -->
                                                             <div class="modal-footer">
-                                                                        <a href="<?php echo base_url() ?>print_pdf/pdf_download?&personal_id=<?php echo $value->personal_id;?>"
+                                                                <a href="<?php echo base_url() ?>print_pdf/pdf_download?&personal_id=<?php echo $value->personal_id;?>"
                                                         class='btn btn-sm btn-danger' id='pdf_download' target='top'><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <i class="fa fa-download" aria-hidden="true"></i></a>
                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                             </div>                                                        
